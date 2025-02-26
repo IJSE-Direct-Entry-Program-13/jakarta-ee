@@ -4,6 +4,16 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
+    <context-param>
+        <param-name>param1</param-name>
+        <param-value>value1</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>param2</param-name>
+        <param-value>value2</param-value>
+    </context-param>
+
     <listener>
         <listener-class>lk.ijse.dep13.app.listener.HelloListener8</listener-class>
     </listener>
@@ -15,6 +25,14 @@
     <filter>
         <filter-name>Filter3</filter-name>
         <filter-class>lk.ijse.dep13.app.filter.HelloFilter3</filter-class>
+        <init-param>
+            <param-name>param1</param-name>
+            <param-value>filter-value1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>param2</param-name>
+            <param-value>filter-value2</param-value>
+        </init-param>
     </filter>
 
     <filter-mapping>
@@ -36,6 +54,14 @@
         <servlet-name>Servlet8</servlet-name>
         <servlet-class>lk.ijse.dep13.app.HelloServlet8</servlet-class>
         <load-on-startup>0</load-on-startup>
+        <init-param>
+            <param-name>param1</param-name>
+            <param-value>servlet-value1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>param2</param-name>
+            <param-value>servlet-value2</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
