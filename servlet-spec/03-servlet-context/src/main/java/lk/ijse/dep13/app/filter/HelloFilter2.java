@@ -3,7 +3,7 @@ package lk.ijse.dep13.app.filter;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpFilter;
 
-@WebFilter
+@WebFilter(urlPatterns = "/*")
 public class HelloFilter2 extends HttpFilter {
 
     static{

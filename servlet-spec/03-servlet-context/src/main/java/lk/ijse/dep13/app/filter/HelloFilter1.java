@@ -4,8 +4,8 @@ import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.annotation.WebInitParam;
 import jakarta.servlet.http.HttpFilter;
 
-@WebFilter(filterName = "HelloFilter",
-        urlPatterns = "/",
+@WebFilter(filterName = "HelloFilter1",
+        urlPatterns = "/*",
         initParams = {
                 @WebInitParam(name = "param1", value = "filter-value1"),
                 @WebInitParam(name = "param2", value = "filter-value2")

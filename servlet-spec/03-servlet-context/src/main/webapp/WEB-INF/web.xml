@@ -37,7 +37,7 @@
 
     <filter-mapping>
         <filter-name>Filter3</filter-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
 
     <filter>
@@ -47,7 +47,7 @@
 
     <filter-mapping>
         <filter-name>Filter4</filter-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
 
     <servlet>

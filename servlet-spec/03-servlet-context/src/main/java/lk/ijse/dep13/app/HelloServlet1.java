@@ -5,6 +5,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 
 @WebServlet(loadOnStartup = 0,
+        urlPatterns = "/hello1",
         initParams = {
                 @WebInitParam(name = "param1", value = "servlet-value1"),
                 @WebInitParam(name = "param2", value = "servlet-value2")
