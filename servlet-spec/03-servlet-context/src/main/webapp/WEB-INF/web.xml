@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <listener>
+        <listener-class>lk.ijse.dep13.app.listener.HelloListener8</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>lk.ijse.dep13.app.listener.HelloListener9</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>Filter3</filter-name>
+        <filter-class>lk.ijse.dep13.app.filter.HelloFilter3</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Filter3</filter-name>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>Filter4</filter-name>
+        <filter-class>lk.ijse.dep13.app.filter.HelloFilter4</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Filter4</filter-name>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>Servlet8</servlet-name>
+        <servlet-class>lk.ijse.dep13.app.HelloServlet8</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet8</servlet-name>
+        <url-pattern>/hello8</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet9</servlet-name>
+        <servlet-class>lk.ijse.dep13.app.HelloServlet9</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet9</servlet-name>
+        <url-pattern>/hello9</url-pattern>
+    </servlet-mapping>
+</web-app>
