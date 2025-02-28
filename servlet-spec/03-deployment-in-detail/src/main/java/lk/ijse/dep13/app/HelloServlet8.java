@@ -3,6 +3,7 @@ package lk.ijse.dep13.app;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 
+@WebServlet
 public class HelloServlet8 extends HttpServlet {
     static{
         System.out.println("HelloServlet8 class is being initialized");

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>lk.ijse.dep13</groupId>
-    <artifactId>03-servlet-context</artifactId>
+    <artifactId>deployment-in-detail</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 

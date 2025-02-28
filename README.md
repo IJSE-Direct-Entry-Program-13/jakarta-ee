@@ -1,0 +1,2 @@
+# Jakarta EE
+Welcome to the Jakarta EE Essentials repository! This collection of projects explores key technologies in Jakarta EE, including Servlets, JSP, JSON-B, JSON-P, JPA and more. It provides hands-on examples demonstrating how to build dynamic web applications, handle JSON processing, and manage persistence with JPA. From handling HTTP requests with Servlets to templating with JSP and working with JSON data using JSON-B and JSON-P, this repository serves as a comprehensive guide to mastering core Jakarta EE components.

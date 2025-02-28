@@ -37,7 +37,9 @@
 
     <filter-mapping>
         <filter-name>Filter3</filter-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/abc</url-pattern>
+        <url-pattern>/edf</url-pattern>
+        <servlet-name>Servlet8</servlet-name>
     </filter-mapping>
 
     <filter>
@@ -53,7 +55,6 @@
     <servlet>
         <servlet-name>Servlet8</servlet-name>
         <servlet-class>lk.ijse.dep13.app.HelloServlet8</servlet-class>
-        <load-on-startup>0</load-on-startup>
         <init-param>
             <param-name>param1</param-name>
             <param-value>servlet-value1</param-value>
@@ -62,6 +63,7 @@
             <param-name>param2</param-name>
             <param-value>servlet-value2</param-value>
         </init-param>
+        <load-on-startup>0</load-on-startup>
     </servlet>
 
     <servlet-mapping>
