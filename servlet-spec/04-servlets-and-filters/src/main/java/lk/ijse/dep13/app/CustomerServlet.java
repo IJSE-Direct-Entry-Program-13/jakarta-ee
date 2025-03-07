@@ -4,8 +4,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 
 @WebServlet(name = "customer-servlet",
-        urlPatterns = "/customers",
-        loadOnStartup = 0)
+        urlPatterns = "/customers")
 public class CustomerServlet extends HttpServlet {
 
     static {
