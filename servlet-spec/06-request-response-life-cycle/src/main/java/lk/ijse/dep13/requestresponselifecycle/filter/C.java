@@ -31,6 +31,8 @@ public class C extends HttpFilter {
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         System.out.println("C: doFilter(http.s.req, http.s.res, f.chain)");
+        System.out.println("C: Incoming");
         super.doFilter(req, res, chain);
+        System.out.println("C: Outgoing");
     }
 }

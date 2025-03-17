@@ -6,7 +6,12 @@ import jakarta.servlet.annotation.WebListener;
 
 @WebListener
 public class RequestListener implements ServletRequestListener {
-
+    static{
+        System.out.println("RequestListener class object is being initialized");
+    }
+    public RequestListener() {
+        System.out.println("RequestListener object is being initialized");
+    }
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
         System.out.println("RequestListener initialized");

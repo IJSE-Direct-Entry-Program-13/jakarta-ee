@@ -37,6 +37,7 @@
     <filter-mapping>
         <filter-name>D</filter-name>
         <servlet-name>customer-servlet</servlet-name>
-        <url-pattern>/items</url-pattern>
+        <servlet-name>item-servlet</servlet-name>
+<!--        <url-pattern>/items</url-pattern>-->
     </filter-mapping>
 </web-app>
