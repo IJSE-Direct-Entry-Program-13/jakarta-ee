@@ -3,13 +3,13 @@ import java.util.Arrays;
 import java.util.List;
 
 interface ServletRequest {
-    String getMethod();
 }
 
 interface ServletResponse {
 }
 
 interface HttpServletRequest extends ServletRequest {
+    String getMethod();
 }
 
 interface HttpServletResponse extends ServletResponse {
@@ -31,14 +31,22 @@ public class DEPContainer {
 
     public static void main(String[] args) {
         // Create Request and Response
-        ServletRequest request = new HttpServletRequestImpl("POST");
+        ServletRequest request = new HttpServletRequestImpl("GET");
         ServletResponse response = new HttpServletResponseImpl();
 
-        // Consult Servlet Context and create a filter chain instance
-        List<Filter> filters = new ArrayList<>(List.of(new MyFilter1(), new MyFilter2()));
-        List<Servlet> servlets = new ArrayList<>(List.of(new MyServlet()));
-        FilterChain chain = new ApplicationFilterChain(new ArrayList<>(List.of(filters.get(1), servlets.get(0))));
-        chain.doFilter(request, response);
+        new Thread(()->{
+
+            // 1. Identify app
+
+            // 2. Consult Servlet Context and create a filter chain instance
+            List<Filter> filters = new ArrayList<>(List.of(new MyFilter1(), new MyFilter2()));
+            List<Servlet> servlets = new ArrayList<>(List.of(new MyServlet()));
+
+            FilterChain chain = new ApplicationFilterChain(new ArrayList<>(List.of(filters.get(1), filters.get(0), servlets.get(0))));
+            chain.doFilter(request, response);
+
+        }).start();
+
     }
 }
 
