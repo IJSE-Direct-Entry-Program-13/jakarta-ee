@@ -1,0 +1,12 @@
+{
+    "name": {
+        "first": "Kasun",
+        "last": "Sampath"
+    },
+    "age": 18,
+    "qualifications": null,
+    "contacts": [
+        "011-1234567",
+        "077-1234567"
+    ]
+}
